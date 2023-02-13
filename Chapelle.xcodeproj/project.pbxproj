@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		A61511BB299A8FBE00ED052F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A61511BA299A8FBE00ED052F /* README.md */; };
+		A61511C9299ACD8800ED052F /* ChapelleWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61511C8299ACD8800ED052F /* ChapelleWidgetBundle.swift */; };
+		A61511CB299ACD8800ED052F /* ChapelleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61511CA299ACD8800ED052F /* ChapelleWidget.swift */; };
+		A61511CD299ACD8900ED052F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61511CC299ACD8900ED052F /* Assets.xcassets */; };
+		A61511D1299ACD8900ED052F /* ChapelleWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A61511C1299ACD8800ED052F /* ChapelleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A61511D6299ACE1800ED052F /* WebcamLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE0C299A8B7B00B3D170 /* WebcamLocation.swift */; };
+		A61511D7299ACE4500ED052F /* ImageArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADFE299A8B1D00B3D170 /* ImageArchive.swift */; };
+		A61511D8299ACF4600ED052F /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADF7299A8B1D00B3D170 /* Weather.swift */; };
+		A61511D9299ACF4600ED052F /* WeatherCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADFD299A8B1D00B3D170 /* WeatherCondition.swift */; };
+		A61511DA299ACF4D00ED052F /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD8A299A88AD00B3D170 /* WeatherService.swift */; };
+		A61511DB299ACF5100ED052F /* YRForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADF8299A8B1D00B3D170 /* YRForecast.swift */; };
+		A61511DC299ACF8500ED052F /* NordicFranceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD92299A88AE00B3D170 /* NordicFranceService.swift */; };
+		A61511DD299ACFEA00ED052F /* SnowStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADFA299A8B1D00B3D170 /* SnowStatus.swift */; };
+		A61511DF299AD2E600ED052F /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = A61511DE299AD2E600ED052F /* SwiftSoup */; };
+		A643185E299AE2D400AA10E7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61511C5299ACD8800ED052F /* SwiftUI.framework */; };
+		A6431861299AE2D600AA10E7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61511C3299ACD8800ED052F /* WidgetKit.framework */; };
 		A6F8AD4C299A885300B3D170 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AD4B299A885300B3D170 /* Preview Assets.xcassets */; };
 		A6F8AD56299A885300B3D170 /* ChapelleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD55299A885300B3D170 /* ChapelleTests.swift */; };
 		A6F8AD60299A885300B3D170 /* ChapelleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD5F299A885300B3D170 /* ChapelleUITests.swift */; };
@@ -57,6 +72,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A61511CF299ACD8900ED052F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6F8AD38299A885200B3D170 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A61511C0299ACD8800ED052F;
+			remoteInfo = ChapelleWidgetExtension;
+		};
 		A6F8AD52299A885300B3D170 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A6F8AD38299A885200B3D170 /* Project object */;
@@ -73,9 +95,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A61511D5299ACD8900ED052F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A61511D1299ACD8900ED052F /* ChapelleWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A61511BA299A8FBE00ED052F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A61511BC299A97C500ED052F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61511C1299ACD8800ED052F /* ChapelleWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChapelleWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61511C3299ACD8800ED052F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A61511C5299ACD8800ED052F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A61511C8299ACD8800ED052F /* ChapelleWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapelleWidgetBundle.swift; sourceTree = "<group>"; };
+		A61511CA299ACD8800ED052F /* ChapelleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapelleWidget.swift; sourceTree = "<group>"; };
+		A61511CC299ACD8900ED052F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A61511CE299ACD8900ED052F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6F8AD40299A885200B3D170 /* Chapelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F8AD49299A885300B3D170 /* Chapelle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chapelle.entitlements; sourceTree = "<group>"; };
 		A6F8AD4B299A885300B3D170 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -127,6 +170,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A61511BE299ACD8800ED052F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A643185E299AE2D400AA10E7 /* SwiftUI.framework in Frameworks */,
+				A61511DF299AD2E600ED052F /* SwiftSoup in Frameworks */,
+				A6431861299AE2D600AA10E7 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6F8AD3D299A885200B3D170 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +206,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A61511C2299ACD8800ED052F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A61511C3299ACD8800ED052F /* WidgetKit.framework */,
+				A61511C5299ACD8800ED052F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A61511C7299ACD8800ED052F /* ChapelleWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A61511C8299ACD8800ED052F /* ChapelleWidgetBundle.swift */,
+				A61511CA299ACD8800ED052F /* ChapelleWidget.swift */,
+				A61511CC299ACD8900ED052F /* Assets.xcassets */,
+				A61511CE299ACD8900ED052F /* Info.plist */,
+			);
+			path = ChapelleWidget;
+			sourceTree = "<group>";
+		};
 		A6F8AD37299A885200B3D170 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +233,8 @@
 				A6F8AD42299A885200B3D170 /* Chapelle */,
 				A6F8AD54299A885300B3D170 /* ChapelleTests */,
 				A6F8AD5E299A885300B3D170 /* ChapelleUITests */,
+				A61511C7299ACD8800ED052F /* ChapelleWidget */,
+				A61511C2299ACD8800ED052F /* Frameworks */,
 				A6F8AD41299A885200B3D170 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -170,6 +245,7 @@
 				A6F8AD40299A885200B3D170 /* Chapelle.app */,
 				A6F8AD51299A885300B3D170 /* ChapelleTests.xctest */,
 				A6F8AD5B299A885300B3D170 /* ChapelleUITests.xctest */,
+				A61511C1299ACD8800ED052F /* ChapelleWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -300,6 +376,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A61511C0299ACD8800ED052F /* ChapelleWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61511D2299ACD8900ED052F /* Build configuration list for PBXNativeTarget "ChapelleWidgetExtension" */;
+			buildPhases = (
+				A61511BD299ACD8800ED052F /* Sources */,
+				A61511BE299ACD8800ED052F /* Frameworks */,
+				A61511BF299ACD8800ED052F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChapelleWidgetExtension;
+			packageProductDependencies = (
+				A61511DE299AD2E600ED052F /* SwiftSoup */,
+			);
+			productName = ChapelleWidgetExtension;
+			productReference = A61511C1299ACD8800ED052F /* ChapelleWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A6F8AD3F299A885200B3D170 /* Chapelle */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6F8AD65299A885400B3D170 /* Build configuration list for PBXNativeTarget "Chapelle" */;
@@ -307,10 +403,12 @@
 				A6F8AD3C299A885200B3D170 /* Sources */,
 				A6F8AD3D299A885200B3D170 /* Frameworks */,
 				A6F8AD3E299A885200B3D170 /* Resources */,
+				A61511D5299ACD8900ED052F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A61511D0299ACD8900ED052F /* PBXTargetDependency */,
 			);
 			name = Chapelle;
 			packageProductDependencies = (
@@ -367,6 +465,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					A61511C0299ACD8800ED052F = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					A6F8AD3F299A885200B3D170 = {
 						CreatedOnToolsVersion = 14.2;
 						LastSwiftMigration = 1420;
@@ -401,11 +502,20 @@
 				A6F8AD3F299A885200B3D170 /* Chapelle */,
 				A6F8AD50299A885300B3D170 /* ChapelleTests */,
 				A6F8AD5A299A885300B3D170 /* ChapelleUITests */,
+				A61511C0299ACD8800ED052F /* ChapelleWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A61511BF299ACD8800ED052F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61511CD299ACD8900ED052F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6F8AD3E299A885200B3D170 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,6 +552,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A61511BD299ACD8800ED052F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61511C9299ACD8800ED052F /* ChapelleWidgetBundle.swift in Sources */,
+				A61511CB299ACD8800ED052F /* ChapelleWidget.swift in Sources */,
+				A61511D7299ACE4500ED052F /* ImageArchive.swift in Sources */,
+				A61511D6299ACE1800ED052F /* WebcamLocation.swift in Sources */,
+				A61511DD299ACFEA00ED052F /* SnowStatus.swift in Sources */,
+				A61511D9299ACF4600ED052F /* WeatherCondition.swift in Sources */,
+				A61511DB299ACF5100ED052F /* YRForecast.swift in Sources */,
+				A61511D8299ACF4600ED052F /* Weather.swift in Sources */,
+				A61511DA299ACF4D00ED052F /* WeatherService.swift in Sources */,
+				A61511DC299ACF8500ED052F /* NordicFranceService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6F8AD3C299A885200B3D170 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,6 +626,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A61511D0299ACD8900ED052F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A61511C0299ACD8800ED052F /* ChapelleWidgetExtension */;
+			targetProxy = A61511CF299ACD8900ED052F /* PBXContainerItemProxy */;
+		};
 		A6F8AD53299A885300B3D170 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A6F8AD3F299A885200B3D170 /* Chapelle */;
@@ -512,6 +644,65 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		A61511D3299ACD8900ED052F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E873B24XVN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChapelleWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ChapelleWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 7;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.chapelledesbois.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A61511D4299ACD8900ED052F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E873B24XVN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChapelleWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ChapelleWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 7;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.chapelledesbois.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		A6F8AD63299A885400B3D170 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -624,6 +815,7 @@
 		A6F8AD66299A885400B3D170 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -650,7 +842,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 6;
+				MARKETING_VERSION = 7;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.chapelledesbois;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -667,6 +859,7 @@
 		A6F8AD67299A885400B3D170 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -693,7 +886,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 6;
+				MARKETING_VERSION = 7;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.chapelledesbois;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -799,6 +992,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A61511D2299ACD8900ED052F /* Build configuration list for PBXNativeTarget "ChapelleWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61511D3299ACD8900ED052F /* Debug */,
+				A61511D4299ACD8900ED052F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A6F8AD3B299A885200B3D170 /* Build configuration list for PBXProject "Chapelle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -857,6 +1059,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A61511DE299AD2E600ED052F /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6F8ADBC299A896300B3D170 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
 		A6F8ADBD299A896300B3D170 /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A6F8ADBC299A896300B3D170 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
