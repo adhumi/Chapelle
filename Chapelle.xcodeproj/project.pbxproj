@@ -75,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		A61511BA299A8FBE00ED052F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A61511BC299A97C500ED052F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6F8AD40299A885200B3D170 /* Chapelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F8AD49299A885300B3D170 /* Chapelle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chapelle.entitlements; sourceTree = "<group>"; };
 		A6F8AD4B299A885300B3D170 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -186,11 +187,12 @@
 				A6F8AD81299A88AC00B3D170 /* WeatherCell.swift */,
 				A6F8AD8A299A88AD00B3D170 /* WeatherService.swift */,
 				A6F8AE2C299A8C8E00B3D170 /* MapView */,
-				A6F8AE12299A8BD700B3D170 /* Resources */,
 				A6F8AE07299A8B4D00B3D170 /* Webcam */,
 				A6F8ADE6299A8ADC00B3D170 /* Model */,
 				A6F8ADE3299A8A5700B3D170 /* ElevationChart */,
+				A61511BC299A97C500ED052F /* Info.plist */,
 				A6F8AD49299A885300B3D170 /* Chapelle.entitlements */,
+				A6F8AE12299A8BD700B3D170 /* Resources */,
 				A6F8AD4A299A885300B3D170 /* Preview Content */,
 			);
 			path = Chapelle;
@@ -633,6 +635,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chapelle/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -675,6 +678,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chapelle/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
