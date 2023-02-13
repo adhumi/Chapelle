@@ -7,13 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6F8AD44299A885200B3D170 /* ChapelleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD43299A885200B3D170 /* ChapelleApp.swift */; };
-		A6F8AD46299A885200B3D170 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD45299A885200B3D170 /* ContentView.swift */; };
-		A6F8AD48299A885300B3D170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AD47299A885300B3D170 /* Assets.xcassets */; };
 		A6F8AD4C299A885300B3D170 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AD4B299A885300B3D170 /* Preview Assets.xcassets */; };
 		A6F8AD56299A885300B3D170 /* ChapelleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD55299A885300B3D170 /* ChapelleTests.swift */; };
 		A6F8AD60299A885300B3D170 /* ChapelleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD5F299A885300B3D170 /* ChapelleUITests.swift */; };
 		A6F8AD62299A885400B3D170 /* ChapelleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD61299A885400B3D170 /* ChapelleUITestsLaunchTests.swift */; };
+		A6F8ADA0299A88AF00B3D170 /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD79299A88AA00B3D170 /* Date+Additions.swift */; };
+		A6F8ADA2299A88AF00B3D170 /* TrackCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD7B299A88AA00B3D170 /* TrackCellView.swift */; };
+		A6F8ADA5299A88AF00B3D170 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD7E299A88AB00B3D170 /* ContentView.swift */; };
+		A6F8ADA8299A88AF00B3D170 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD81299A88AC00B3D170 /* WeatherCell.swift */; };
+		A6F8ADAD299A88AF00B3D170 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD86299A88AC00B3D170 /* TrackView.swift */; };
+		A6F8ADB1299A88AF00B3D170 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD8A299A88AD00B3D170 /* WeatherService.swift */; };
+		A6F8ADB2299A88AF00B3D170 /* Chapelle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD8B299A88AD00B3D170 /* Chapelle.swift */; };
+		A6F8ADB4299A88AF00B3D170 /* ContentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD8D299A88AE00B3D170 /* ContentVM.swift */; };
+		A6F8ADB9299A88AF00B3D170 /* NordicFranceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD92299A88AE00B3D170 /* NordicFranceService.swift */; };
+		A6F8ADBE299A896300B3D170 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = A6F8ADBD299A896300B3D170 /* SwiftSoup */; };
+		A6F8ADC1299A89A200B3D170 /* Mapbox in Frameworks */ = {isa = PBXBuildFile; productRef = A6F8ADC0299A89A200B3D170 /* Mapbox */; };
+		A6F8ADDA299A8A3900B3D170 /* ElevationChartShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADD1299A8A3900B3D170 /* ElevationChartShape.swift */; };
+		A6F8ADDC299A8A3900B3D170 /* ElevationChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADC5299A8A3900B3D170 /* ElevationChart.swift */; };
+		A6F8ADDD299A8A3900B3D170 /* ElevationChartFillShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADCF299A8A3900B3D170 /* ElevationChartFillShape.swift */; };
+		A6F8ADFF299A8B1D00B3D170 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADF7299A8B1D00B3D170 /* Weather.swift */; };
+		A6F8AE00299A8B1D00B3D170 /* YRForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADF8299A8B1D00B3D170 /* YRForecast.swift */; };
+		A6F8AE01299A8B1D00B3D170 /* TrackMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADF9299A8B1D00B3D170 /* TrackMetadata.swift */; };
+		A6F8AE02299A8B1D00B3D170 /* SnowStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADFA299A8B1D00B3D170 /* SnowStatus.swift */; };
+		A6F8AE03299A8B1D00B3D170 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADFB299A8B1D00B3D170 /* Activity.swift */; };
+		A6F8AE04299A8B1D00B3D170 /* NordicFranceTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADFC299A8B1D00B3D170 /* NordicFranceTrack.swift */; };
+		A6F8AE05299A8B1D00B3D170 /* WeatherCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADFD299A8B1D00B3D170 /* WeatherCondition.swift */; };
+		A6F8AE06299A8B1D00B3D170 /* ImageArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADFE299A8B1D00B3D170 /* ImageArchive.swift */; };
+		A6F8AE0D299A8B7B00B3D170 /* WebcamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE08299A8B7A00B3D170 /* WebcamCell.swift */; };
+		A6F8AE0E299A8B7B00B3D170 /* WebcamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE09299A8B7A00B3D170 /* WebcamsView.swift */; };
+		A6F8AE0F299A8B7B00B3D170 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE0A299A8B7A00B3D170 /* ActivityViewController.swift */; };
+		A6F8AE10299A8B7B00B3D170 /* WebcamArchiveVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE0B299A8B7A00B3D170 /* WebcamArchiveVM.swift */; };
+		A6F8AE11299A8B7B00B3D170 /* WebcamLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE0C299A8B7B00B3D170 /* WebcamLocation.swift */; };
+		A6F8AE17299A8C0300B3D170 /* plan-raquettes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AE13299A8C0200B3D170 /* plan-raquettes.pdf */; };
+		A6F8AE19299A8C0300B3D170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AE15299A8C0200B3D170 /* Assets.xcassets */; };
+		A6F8AE1A299A8C0300B3D170 /* plan-fond.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AE16299A8C0200B3D170 /* plan-fond.pdf */; };
+		A6F8AE23299A8C4000B3D170 /* mortes.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AE1C299A8C4000B3D170 /* mortes.gpx */; };
+		A6F8AE24299A8C4000B3D170 /* greffier.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AE1D299A8C4000B3D170 /* greffier.gpx */; };
+		A6F8AE25299A8C4000B3D170 /* combeVerte.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AE1E299A8C4000B3D170 /* combeVerte.gpx */; };
+		A6F8AE26299A8C4000B3D170 /* beurriere.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AE1F299A8C4000B3D170 /* beurriere.gpx */; };
+		A6F8AE27299A8C4000B3D170 /* chaletPin.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AE20299A8C4000B3D170 /* chaletPin.gpx */; };
+		A6F8AE28299A8C4000B3D170 /* jobez.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AE21299A8C4000B3D170 /* jobez.gpx */; };
+		A6F8AE29299A8C4000B3D170 /* nondance.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AE22299A8C4000B3D170 /* nondance.gpx */; };
+		A6F8AE2B299A8C6800B3D170 /* Waypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE2A299A8C6800B3D170 /* Waypoint.swift */; };
+		A6F8AE30299A8C9F00B3D170 /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE2D299A8C9F00B3D170 /* MapViewCoordinator.swift */; };
+		A6F8AE31299A8C9F00B3D170 /* MapView+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE2E299A8C9F00B3D170 /* MapView+Route.swift */; };
+		A6F8AE32299A8C9F00B3D170 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE2F299A8C9F00B3D170 /* MapView.swift */; };
+		A6F8AE34299A8D2400B3D170 /* GPXParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE33299A8D2400B3D170 /* GPXParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +74,6 @@
 
 /* Begin PBXFileReference section */
 		A6F8AD40299A885200B3D170 /* Chapelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6F8AD43299A885200B3D170 /* ChapelleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapelleApp.swift; sourceTree = "<group>"; };
-		A6F8AD45299A885200B3D170 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A6F8AD47299A885300B3D170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6F8AD49299A885300B3D170 /* Chapelle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chapelle.entitlements; sourceTree = "<group>"; };
 		A6F8AD4B299A885300B3D170 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6F8AD51299A885300B3D170 /* ChapelleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChapelleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +81,46 @@
 		A6F8AD5B299A885300B3D170 /* ChapelleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChapelleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F8AD5F299A885300B3D170 /* ChapelleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapelleUITests.swift; sourceTree = "<group>"; };
 		A6F8AD61299A885400B3D170 /* ChapelleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapelleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A6F8AD79299A88AA00B3D170 /* Date+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
+		A6F8AD7B299A88AA00B3D170 /* TrackCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCellView.swift; sourceTree = "<group>"; };
+		A6F8AD7E299A88AB00B3D170 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6F8AD81299A88AC00B3D170 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		A6F8AD86299A88AC00B3D170 /* TrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
+		A6F8AD8A299A88AD00B3D170 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		A6F8AD8B299A88AD00B3D170 /* Chapelle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapelle.swift; sourceTree = "<group>"; };
+		A6F8AD8D299A88AE00B3D170 /* ContentVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentVM.swift; sourceTree = "<group>"; };
+		A6F8AD92299A88AE00B3D170 /* NordicFranceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NordicFranceService.swift; sourceTree = "<group>"; };
+		A6F8ADC5299A8A3900B3D170 /* ElevationChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationChart.swift; sourceTree = "<group>"; };
+		A6F8ADCF299A8A3900B3D170 /* ElevationChartFillShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationChartFillShape.swift; sourceTree = "<group>"; };
+		A6F8ADD1299A8A3900B3D170 /* ElevationChartShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationChartShape.swift; sourceTree = "<group>"; };
+		A6F8ADF7299A8B1D00B3D170 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		A6F8ADF8299A8B1D00B3D170 /* YRForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YRForecast.swift; sourceTree = "<group>"; };
+		A6F8ADF9299A8B1D00B3D170 /* TrackMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackMetadata.swift; sourceTree = "<group>"; };
+		A6F8ADFA299A8B1D00B3D170 /* SnowStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowStatus.swift; sourceTree = "<group>"; };
+		A6F8ADFB299A8B1D00B3D170 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		A6F8ADFC299A8B1D00B3D170 /* NordicFranceTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NordicFranceTrack.swift; sourceTree = "<group>"; };
+		A6F8ADFD299A8B1D00B3D170 /* WeatherCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCondition.swift; sourceTree = "<group>"; };
+		A6F8ADFE299A8B1D00B3D170 /* ImageArchive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageArchive.swift; sourceTree = "<group>"; };
+		A6F8AE08299A8B7A00B3D170 /* WebcamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebcamCell.swift; sourceTree = "<group>"; };
+		A6F8AE09299A8B7A00B3D170 /* WebcamsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebcamsView.swift; sourceTree = "<group>"; };
+		A6F8AE0A299A8B7A00B3D170 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		A6F8AE0B299A8B7A00B3D170 /* WebcamArchiveVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebcamArchiveVM.swift; sourceTree = "<group>"; };
+		A6F8AE0C299A8B7B00B3D170 /* WebcamLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebcamLocation.swift; sourceTree = "<group>"; };
+		A6F8AE13299A8C0200B3D170 /* plan-raquettes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "plan-raquettes.pdf"; sourceTree = "<group>"; };
+		A6F8AE15299A8C0200B3D170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6F8AE16299A8C0200B3D170 /* plan-fond.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "plan-fond.pdf"; sourceTree = "<group>"; };
+		A6F8AE1C299A8C4000B3D170 /* mortes.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mortes.gpx; sourceTree = "<group>"; };
+		A6F8AE1D299A8C4000B3D170 /* greffier.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = greffier.gpx; sourceTree = "<group>"; };
+		A6F8AE1E299A8C4000B3D170 /* combeVerte.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = combeVerte.gpx; sourceTree = "<group>"; };
+		A6F8AE1F299A8C4000B3D170 /* beurriere.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = beurriere.gpx; sourceTree = "<group>"; };
+		A6F8AE20299A8C4000B3D170 /* chaletPin.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = chaletPin.gpx; sourceTree = "<group>"; };
+		A6F8AE21299A8C4000B3D170 /* jobez.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = jobez.gpx; sourceTree = "<group>"; };
+		A6F8AE22299A8C4000B3D170 /* nondance.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = nondance.gpx; sourceTree = "<group>"; };
+		A6F8AE2A299A8C6800B3D170 /* Waypoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waypoint.swift; sourceTree = "<group>"; };
+		A6F8AE2D299A8C9F00B3D170 /* MapViewCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
+		A6F8AE2E299A8C9F00B3D170 /* MapView+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapView+Route.swift"; sourceTree = "<group>"; };
+		A6F8AE2F299A8C9F00B3D170 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A6F8AE33299A8D2400B3D170 /* GPXParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F8ADBE299A896300B3D170 /* SwiftSoup in Frameworks */,
+				A6F8ADC1299A89A200B3D170 /* Mapbox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,9 +173,20 @@
 		A6F8AD42299A885200B3D170 /* Chapelle */ = {
 			isa = PBXGroup;
 			children = (
-				A6F8AD43299A885200B3D170 /* ChapelleApp.swift */,
-				A6F8AD45299A885200B3D170 /* ContentView.swift */,
-				A6F8AD47299A885300B3D170 /* Assets.xcassets */,
+				A6F8AD8B299A88AD00B3D170 /* Chapelle.swift */,
+				A6F8AD7E299A88AB00B3D170 /* ContentView.swift */,
+				A6F8AD8D299A88AE00B3D170 /* ContentVM.swift */,
+				A6F8AD79299A88AA00B3D170 /* Date+Additions.swift */,
+				A6F8AD92299A88AE00B3D170 /* NordicFranceService.swift */,
+				A6F8AD7B299A88AA00B3D170 /* TrackCellView.swift */,
+				A6F8AD86299A88AC00B3D170 /* TrackView.swift */,
+				A6F8AD81299A88AC00B3D170 /* WeatherCell.swift */,
+				A6F8AD8A299A88AD00B3D170 /* WeatherService.swift */,
+				A6F8AE2C299A8C8E00B3D170 /* MapView */,
+				A6F8AE12299A8BD700B3D170 /* Resources */,
+				A6F8AE07299A8B4D00B3D170 /* Webcam */,
+				A6F8ADE6299A8ADC00B3D170 /* Model */,
+				A6F8ADE3299A8A5700B3D170 /* ElevationChart */,
 				A6F8AD49299A885300B3D170 /* Chapelle.entitlements */,
 				A6F8AD4A299A885300B3D170 /* Preview Content */,
 			);
@@ -129,6 +218,80 @@
 			path = ChapelleUITests;
 			sourceTree = "<group>";
 		};
+		A6F8ADE3299A8A5700B3D170 /* ElevationChart */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8ADC5299A8A3900B3D170 /* ElevationChart.swift */,
+				A6F8ADCF299A8A3900B3D170 /* ElevationChartFillShape.swift */,
+				A6F8ADD1299A8A3900B3D170 /* ElevationChartShape.swift */,
+			);
+			path = ElevationChart;
+			sourceTree = "<group>";
+		};
+		A6F8ADE6299A8ADC00B3D170 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8ADFB299A8B1D00B3D170 /* Activity.swift */,
+				A6F8ADFE299A8B1D00B3D170 /* ImageArchive.swift */,
+				A6F8ADFC299A8B1D00B3D170 /* NordicFranceTrack.swift */,
+				A6F8ADFA299A8B1D00B3D170 /* SnowStatus.swift */,
+				A6F8ADF9299A8B1D00B3D170 /* TrackMetadata.swift */,
+				A6F8ADF7299A8B1D00B3D170 /* Weather.swift */,
+				A6F8ADFD299A8B1D00B3D170 /* WeatherCondition.swift */,
+				A6F8ADF8299A8B1D00B3D170 /* YRForecast.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6F8AE07299A8B4D00B3D170 /* Webcam */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8AE0A299A8B7A00B3D170 /* ActivityViewController.swift */,
+				A6F8AE0B299A8B7A00B3D170 /* WebcamArchiveVM.swift */,
+				A6F8AE08299A8B7A00B3D170 /* WebcamCell.swift */,
+				A6F8AE0C299A8B7B00B3D170 /* WebcamLocation.swift */,
+				A6F8AE09299A8B7A00B3D170 /* WebcamsView.swift */,
+			);
+			path = Webcam;
+			sourceTree = "<group>";
+		};
+		A6F8AE12299A8BD700B3D170 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8AE1B299A8C2800B3D170 /* GPX */,
+				A6F8AE15299A8C0200B3D170 /* Assets.xcassets */,
+				A6F8AE16299A8C0200B3D170 /* plan-fond.pdf */,
+				A6F8AE13299A8C0200B3D170 /* plan-raquettes.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A6F8AE1B299A8C2800B3D170 /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8AE1F299A8C4000B3D170 /* beurriere.gpx */,
+				A6F8AE20299A8C4000B3D170 /* chaletPin.gpx */,
+				A6F8AE1E299A8C4000B3D170 /* combeVerte.gpx */,
+				A6F8AE1D299A8C4000B3D170 /* greffier.gpx */,
+				A6F8AE21299A8C4000B3D170 /* jobez.gpx */,
+				A6F8AE1C299A8C4000B3D170 /* mortes.gpx */,
+				A6F8AE22299A8C4000B3D170 /* nondance.gpx */,
+			);
+			path = GPX;
+			sourceTree = "<group>";
+		};
+		A6F8AE2C299A8C8E00B3D170 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8AE33299A8D2400B3D170 /* GPXParser.swift */,
+				A6F8AE2F299A8C9F00B3D170 /* MapView.swift */,
+				A6F8AE2E299A8C9F00B3D170 /* MapView+Route.swift */,
+				A6F8AE2D299A8C9F00B3D170 /* MapViewCoordinator.swift */,
+				A6F8AE2A299A8C6800B3D170 /* Waypoint.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +308,10 @@
 			dependencies = (
 			);
 			name = Chapelle;
+			packageProductDependencies = (
+				A6F8ADBD299A896300B3D170 /* SwiftSoup */,
+				A6F8ADC0299A89A200B3D170 /* Mapbox */,
+			);
 			productName = Chapelle;
 			productReference = A6F8AD40299A885200B3D170 /* Chapelle.app */;
 			productType = "com.apple.product-type.application";
@@ -197,6 +364,7 @@
 				TargetAttributes = {
 					A6F8AD3F299A885200B3D170 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					A6F8AD50299A885300B3D170 = {
 						CreatedOnToolsVersion = 14.2;
@@ -217,6 +385,10 @@
 				Base,
 			);
 			mainGroup = A6F8AD37299A885200B3D170;
+			packageReferences = (
+				A6F8ADBC299A896300B3D170 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				A6F8ADBF299A89A200B3D170 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+			);
 			productRefGroup = A6F8AD41299A885200B3D170 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,8 +405,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F8AE17299A8C0300B3D170 /* plan-raquettes.pdf in Resources */,
+				A6F8AE24299A8C4000B3D170 /* greffier.gpx in Resources */,
+				A6F8AE23299A8C4000B3D170 /* mortes.gpx in Resources */,
+				A6F8AE1A299A8C0300B3D170 /* plan-fond.pdf in Resources */,
+				A6F8AE28299A8C4000B3D170 /* jobez.gpx in Resources */,
+				A6F8AE19299A8C0300B3D170 /* Assets.xcassets in Resources */,
+				A6F8AE29299A8C4000B3D170 /* nondance.gpx in Resources */,
+				A6F8AE25299A8C4000B3D170 /* combeVerte.gpx in Resources */,
 				A6F8AD4C299A885300B3D170 /* Preview Assets.xcassets in Resources */,
-				A6F8AD48299A885300B3D170 /* Assets.xcassets in Resources */,
+				A6F8AE26299A8C4000B3D170 /* beurriere.gpx in Resources */,
+				A6F8AE27299A8C4000B3D170 /* chaletPin.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +440,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6F8AD46299A885200B3D170 /* ContentView.swift in Sources */,
-				A6F8AD44299A885200B3D170 /* ChapelleApp.swift in Sources */,
+				A6F8AE03299A8B1D00B3D170 /* Activity.swift in Sources */,
+				A6F8ADB4299A88AF00B3D170 /* ContentVM.swift in Sources */,
+				A6F8AE34299A8D2400B3D170 /* GPXParser.swift in Sources */,
+				A6F8AE06299A8B1D00B3D170 /* ImageArchive.swift in Sources */,
+				A6F8AE0F299A8B7B00B3D170 /* ActivityViewController.swift in Sources */,
+				A6F8AE0E299A8B7B00B3D170 /* WebcamsView.swift in Sources */,
+				A6F8AE01299A8B1D00B3D170 /* TrackMetadata.swift in Sources */,
+				A6F8ADDA299A8A3900B3D170 /* ElevationChartShape.swift in Sources */,
+				A6F8ADA2299A88AF00B3D170 /* TrackCellView.swift in Sources */,
+				A6F8ADB9299A88AF00B3D170 /* NordicFranceService.swift in Sources */,
+				A6F8ADA5299A88AF00B3D170 /* ContentView.swift in Sources */,
+				A6F8AE05299A8B1D00B3D170 /* WeatherCondition.swift in Sources */,
+				A6F8AE02299A8B1D00B3D170 /* SnowStatus.swift in Sources */,
+				A6F8ADB2299A88AF00B3D170 /* Chapelle.swift in Sources */,
+				A6F8ADDC299A8A3900B3D170 /* ElevationChart.swift in Sources */,
+				A6F8AE32299A8C9F00B3D170 /* MapView.swift in Sources */,
+				A6F8AE00299A8B1D00B3D170 /* YRForecast.swift in Sources */,
+				A6F8AE04299A8B1D00B3D170 /* NordicFranceTrack.swift in Sources */,
+				A6F8AE2B299A8C6800B3D170 /* Waypoint.swift in Sources */,
+				A6F8ADDD299A8A3900B3D170 /* ElevationChartFillShape.swift in Sources */,
+				A6F8AE11299A8B7B00B3D170 /* WebcamLocation.swift in Sources */,
+				A6F8ADFF299A8B1D00B3D170 /* Weather.swift in Sources */,
+				A6F8ADAD299A88AF00B3D170 /* TrackView.swift in Sources */,
+				A6F8ADA8299A88AF00B3D170 /* WeatherCell.swift in Sources */,
+				A6F8AE30299A8C9F00B3D170 /* MapViewCoordinator.swift in Sources */,
+				A6F8AE10299A8B7B00B3D170 /* WebcamArchiveVM.swift in Sources */,
+				A6F8ADB1299A88AF00B3D170 /* WeatherService.swift in Sources */,
+				A6F8AE31299A8C9F00B3D170 /* MapView+Route.swift in Sources */,
+				A6F8AE0D299A8B7B00B3D170 /* WebcamCell.swift in Sources */,
+				A6F8ADA0299A88AF00B3D170 /* Date+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +620,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Chapelle/Chapelle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -427,20 +637,23 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.Chapelle;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.chapelledesbois;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,6 +662,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Chapelle/Chapelle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -465,20 +679,22 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.Chapelle;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.chapelledesbois;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -612,6 +828,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6F8ADBC299A896300B3D170 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		A6F8ADBF299A89A200B3D170 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maplibre/maplibre-gl-native-distribution";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6F8ADBD299A896300B3D170 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6F8ADBC299A896300B3D170 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		A6F8ADC0299A89A200B3D170 /* Mapbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6F8ADBF299A89A200B3D170 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = Mapbox;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6F8AD38299A885200B3D170 /* Project object */;
 }
