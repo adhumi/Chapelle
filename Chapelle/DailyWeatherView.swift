@@ -102,9 +102,15 @@ self.id = self.time
                             Text(forecast.time)
                                 .font(.subheadline)
                             
-                            forecast.weather?.icon
-                                .resizable()
-                                .frame(width: 35, height: 35)
+                            if let weather = forecast.weather {
+                                weather.icon
+                                    .resizable()
+                                    .frame(width: 35, height: 35)
+                            } else {
+                                Image("clear")
+                                    .resizable()
+                                    .frame(width: 35, height: 35)
+                            }
                             
                             Text(forecast.temperature)
                                 .font(.subheadline)
