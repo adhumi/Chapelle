@@ -8,7 +8,6 @@ struct ContentView: View {
     
     @State var selectedActivity: Activity = .xcSkiing
     @State var refreshImage = false
-    @State var loading = false
     @State var previewUrl: URL? = nil
     
     init() {
@@ -19,15 +18,6 @@ struct ContentView: View {
         NavigationView {
             List {
                 welcomeSection
-                
-                if loading {
-                    HStack {
-                        Spacer()
-                        ProgressView("Chargement…")
-                        Spacer()
-                    }
-                    .listRowBackground(Color.clear)
-                }
                 
                 if let infoMessage = vm.infoMessage, infoMessage != "Secteur fermé" {
                     Section {
@@ -57,12 +47,8 @@ struct ContentView: View {
                 miscSection
             }
             .task {
-                loading = true
-                
                 await vm.loadTracks()
                 await vm.loadWeather()
-                    
-                loading = false
             }
             .refreshable {
                 refreshImage.toggle()
