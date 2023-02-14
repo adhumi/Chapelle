@@ -153,7 +153,7 @@ struct ContentView: View {
     
     func weatherSection(_ weather: Weather) -> some View {
         Section(footer: Text("Source : [yr.no](https://www.yr.no/en/forecast/daily-table/2-6429705)")) {
-            WeatherCell(weather: weather)
+            WeatherScrollView(weather: weather)
                 .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
         }
         .headerProminence(.increased)

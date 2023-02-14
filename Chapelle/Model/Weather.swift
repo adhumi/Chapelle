@@ -18,6 +18,7 @@ struct Weather {
         
         let time: Date
         let current: Details
+        let next1Hour: Next
         let next6Hours: Next
         let next12Hours: Next
     }
@@ -27,7 +28,6 @@ struct Weather {
 }
 
 extension Weather {
-    
     var nextMorningForecast: Forecast? {
         forecasts.first {
             guard let hour = Calendar.current.dateComponents([.hour], from: $0.time).hour else { return false }
@@ -47,6 +47,18 @@ extension Weather {
             return hour == time ? forecast : nil
         }
     }
+    
+    func forecasts(for date: Date) -> [Forecast] {
+        let searchedDateComponents = Calendar.current.dateComponents(in: TimeZone(secondsFromGMT: 0)!, from: date)
+        guard let searchedDay = searchedDateComponents.day else { return [] }
+        
+        return forecasts.enumerated().compactMap { (index, forecast) in
+            let forecastDateComponents = Calendar.current.dateComponents(in: TimeZone(secondsFromGMT: 0)!, from: forecast.time)
+            guard let forecastDay = forecastDateComponents.day else { return nil }
+            
+            return forecastDay == searchedDay ? forecast : nil
+        }
+    }
 }
 
 extension Weather.Forecast: Identifiable {
@@ -64,6 +76,10 @@ extension YRForecast {
                                                                airTemperature: $0.data.instant.details.airTemperature,
                                                                windFromDirection: $0.data.instant.details.windFromDirection,
                                                                windSpeed: $0.data.instant.details.windSpeed),
+                             next1Hour: Weather.Forecast.Next(sky: WeatherCondition(rawValue: $0.data.next1Hours?.summary.symbolCode ?? ""),
+                                                               precipitationAmount: $0.data.next1Hours?.details?.precipitationAmount,
+                                                               airTemperatureMin: $0.data.next1Hours?.details?.airTemperatureMin,
+                                                               airTemperatureMax: $0.data.next1Hours?.details?.airTemperatureMax),
                              next6Hours: Weather.Forecast.Next(sky: WeatherCondition(rawValue: $0.data.next6Hours?.summary.symbolCode ?? ""),
                                                                precipitationAmount: $0.data.next6Hours?.details?.precipitationAmount,
                                                                airTemperatureMin: $0.data.next6Hours?.details?.airTemperatureMin,
