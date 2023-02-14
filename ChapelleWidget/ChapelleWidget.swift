@@ -112,9 +112,21 @@ struct ChapelleWidgetEntryView : View {
     @ViewBuilder
     var forecastView: some View {
         if let forecast = entry.forecast?.forecasts.first, let temperatureMin = forecast.next6Hours.airTemperatureMin, let temperatureMax = forecast.next6Hours.airTemperatureMax {
-            Label("\(Int(temperatureMin))° · \(Int(temperatureMax))°", systemImage: "thermometer.medium")
-                .font(.subheadline)
-                .foregroundColor(.white)
+            HStack(spacing: 0) {
+                Label("Température", systemImage: "thermometer.medium")
+                    .labelStyle(.iconOnly)
+                    .foregroundColor(.white)
+                    .padding(.trailing, 10)
+                Text("\(Int(temperatureMin))°")
+                    .font(.subheadline)
+                    .foregroundColor(.cyan)
+                Text(" · ")
+                    .font(.subheadline)
+                    .foregroundColor(.white)
+                Text("\(Int(temperatureMax))°")
+                    .font(.subheadline)
+                    .foregroundColor(.red)
+            }
         } else {
             EmptyView()
         }
