@@ -1,6 +1,7 @@
 import Foundation
 
 enum TrackMetadata: String {
+    case pisteEclairee
     case beauregard
     case beurriere
     case loge
@@ -20,6 +21,8 @@ enum TrackMetadata: String {
     
     init?(name: String) {
         switch name {
+            case "Piste éclairée Chapelle des Bois":
+                self = .pisteEclairee
             case "Beauregard":
                 self = .beauregard
             case "La Beurrière":
@@ -63,6 +66,8 @@ enum TrackMetadata: String {
     
     var stravaSegment: String {
         switch self {
+            case.pisteEclairee:
+                return ""
             case .beauregard:
                 return ""
             case .beurriere:
@@ -100,44 +105,46 @@ enum TrackMetadata: String {
     
     var length: Int { // Meters
         switch self {
+            case .pisteEclairee: return 1220
             case .beauregard: return 2000
             case .beurriere: return 3490
-            case .loge: return 4500
+            case .loge: return 4490
             case .tourDuVillage: return 4500
-            case .chaumoz: return 9000
+            case .chaumoz: return 9910
             case .combeVerte: return 8230
             case .jobez: return 5640
             case .cernee: return 8000
-            case .norbiere: return 7000
+            case .norbiere: return 8180
             case .nondance: return 4910
-            case .chezMichel: return 8000
+            case .chezMichel: return 8780
             case .combeDesCives: return 9000
             case .chaletPin: return 10810
             case .mortes: return 13360
-            case .presDHaut: return 15000
-            case .greffier: return 11410
+            case .presDHaut: return 1430
+            case .greffier: return 14740
         }
     }
     
     
     var denivelation: Int? { // Meters
         switch self {
+            case .pisteEclairee: return 25
             case .beauregard: return nil
             case .beurriere: return 59
-            case .loge: return nil
+            case .loge: return 49
             case .tourDuVillage: return nil
-            case .chaumoz: return nil
+            case .chaumoz: return 145
             case .combeVerte: return 136
             case .jobez: return 91
             case .cernee: return nil
-            case .norbiere: return nil
+            case .norbiere: return 123
             case .nondance: return 70
-            case .chezMichel: return nil
+            case .chezMichel: return 146
             case .combeDesCives: return nil
             case .chaletPin: return 187
             case .mortes: return 225
-            case .presDHaut: return nil
-            case .greffier: return 212
+            case .presDHaut: return 344
+            case .greffier: return 250
         }
     }
 }
