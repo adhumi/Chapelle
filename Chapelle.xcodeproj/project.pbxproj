@@ -31,7 +31,7 @@
 		A643186E299BE8C300AA10E7 /* chaumoz.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A643186D299BE8C300AA10E7 /* chaumoz.gpx */; };
 		A6431870299BE96900AA10E7 /* norbiere.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A643186F299BE96900AA10E7 /* norbiere.gpx */; };
 		A6431872299BEB6E00AA10E7 /* greffier.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A6431871299BEB6E00AA10E7 /* greffier.gpx */; };
-		A6431874299BED6F00AA10E7 /* presDHaut .gpx in Resources */ = {isa = PBXBuildFile; fileRef = A6431873299BED6F00AA10E7 /* presDHaut .gpx */; };
+		A6431874299BED6F00AA10E7 /* presDHaut.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A6431873299BED6F00AA10E7 /* presDHaut.gpx */; };
 		A6F8AD4C299A885300B3D170 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AD4B299A885300B3D170 /* Preview Assets.xcassets */; };
 		A6F8AD56299A885300B3D170 /* ChapelleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD55299A885300B3D170 /* ChapelleTests.swift */; };
 		A6F8AD60299A885300B3D170 /* ChapelleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD5F299A885300B3D170 /* ChapelleUITests.swift */; };
@@ -135,7 +135,7 @@
 		A643186D299BE8C300AA10E7 /* chaumoz.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = chaumoz.gpx; sourceTree = "<group>"; };
 		A643186F299BE96900AA10E7 /* norbiere.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = norbiere.gpx; sourceTree = "<group>"; };
 		A6431871299BEB6E00AA10E7 /* greffier.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = greffier.gpx; sourceTree = "<group>"; };
-		A6431873299BED6F00AA10E7 /* presDHaut .gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "presDHaut .gpx"; sourceTree = "<group>"; };
+		A6431873299BED6F00AA10E7 /* presDHaut.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = presDHaut.gpx; sourceTree = "<group>"; };
 		A6F8AD40299A885200B3D170 /* Chapelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F8AD49299A885300B3D170 /* Chapelle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chapelle.entitlements; sourceTree = "<group>"; };
 		A6F8AD4B299A885300B3D170 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -368,7 +368,7 @@
 		A6F8AE1B299A8C2800B3D170 /* GPX */ = {
 			isa = PBXGroup;
 			children = (
-				A6431873299BED6F00AA10E7 /* presDHaut .gpx */,
+				A6431873299BED6F00AA10E7 /* presDHaut.gpx */,
 				A643186F299BE96900AA10E7 /* norbiere.gpx */,
 				A643186D299BE8C300AA10E7 /* chaumoz.gpx */,
 				A643186B299BE6B100AA10E7 /* chezMichel.gpx */,
@@ -544,7 +544,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6431874299BED6F00AA10E7 /* presDHaut .gpx in Resources */,
+				A6431874299BED6F00AA10E7 /* presDHaut.gpx in Resources */,
 				A6F8AE17299A8C0300B3D170 /* plan-raquettes.pdf in Resources */,
 				A6F8AE23299A8C4000B3D170 /* mortes.gpx in Resources */,
 				A6431868299BE27800AA10E7 /* loge.gpx in Resources */,
