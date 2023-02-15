@@ -58,8 +58,13 @@ struct WeatherScrollViewCell: View {
             .font(.footnote)
             .foregroundColor(.secondary)
             
-            if let precipitation = forecast.next12Hours.precipitationAmount, precipitation > 0 {
+            if let precipitation = forecast.next12Hours.precipitationAmount, precipitation >= 1 {
                 Label("\(Int(precipitation)) mm", systemImage: "drop")
+                    .font(.footnote)
+                    .labelStyle(.titleOnly)
+                    .foregroundColor(.blue)
+            } else if let precipitation = forecast.next12Hours.precipitationAmount, precipitation > 0 {
+                Label(String(format: "%.1f mm", precipitation), systemImage: "drop")
                     .font(.footnote)
                     .labelStyle(.titleOnly)
                     .foregroundColor(.blue)
