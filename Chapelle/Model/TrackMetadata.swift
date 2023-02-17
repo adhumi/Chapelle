@@ -120,7 +120,7 @@ enum TrackMetadata: String {
             case .combeDesCives: return 9000
             case .chaletPin: return 10810
             case .mortes: return 13360
-            case .presDHaut: return 1430
+            case .presDHaut: return 14300
             case .greffier: return 14740
         }
     }
