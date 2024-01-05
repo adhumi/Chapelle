@@ -6,5 +6,12 @@ struct Chapelle: App {
         WindowGroup {
             ContentView()
         }
+        
+        #if os(xrOS)
+        ImmersiveSpace(id: "ImmersiveWebcam") {
+            ImmersiveWebcamView()
+        }
+        .immersionStyle(selection: .constant(.progressive), in: .progressive)
+        #endif
     }
 }

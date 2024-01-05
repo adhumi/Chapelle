@@ -1,3 +1,4 @@
+#if(iOS)
 import SwiftUI
 import UIKit
 import Mapbox
@@ -49,3 +50,4 @@ struct MapView: UIViewRepresentable {
         }
     }
 }
+#endif

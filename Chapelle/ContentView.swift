@@ -5,10 +5,15 @@ struct ContentView: View {
     @ObservedObject var vm: ContentVM
     
     @Environment(\.openURL) private var openURL
+    @Environment(\.openImmersiveSpace) var openImmersiveSpace
+    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
     
     @State var selectedActivity: Activity = .xcSkiing
     @State var refreshImage = false
     @State var previewUrl: URL? = nil
+    
+    @State private var showImmersiveSpace = false
+    @State private var immersiveSpaceIsShown = false
     
     init() {
         self.vm = ContentVM()
@@ -110,7 +115,7 @@ struct ContentView: View {
     }
     
     var webcamSection: some View {
-        Section(footer: Text("Source : [webcam-hd.com](http://m.webcam-hd.com/espace-nordique-jurassien/val-de-mouthe_chapelle-des-bois)")) {
+        Section {
             ZStack {
                 NavigationLink(destination: {
                     WebcamsView()
@@ -123,6 +128,32 @@ struct ContentView: View {
                     .background(.white)
             }
             .listRowInsets(refreshImage ? .zero : .zero)
+        } footer: {
+            HStack {
+                Text("Source : [webcam-hd.com](http://m.webcam-hd.com/espace-nordique-jurassien/val-de-mouthe_chapelle-des-bois)")
+                
+                Toggle("Immersive", isOn: $showImmersiveSpace)
+                    .toggleStyle(.button)
+                .onChange(of: showImmersiveSpace) { _, newValue in
+                    Task {
+                        if newValue {
+                            switch await openImmersiveSpace(id: "ImmersiveWebcam") {
+                            case .opened:
+                                immersiveSpaceIsShown = true
+                            case .error, .userCancelled:
+                                fallthrough
+                            @unknown default:
+                                immersiveSpaceIsShown = false
+                                showImmersiveSpace = false
+                            }
+                        } else if immersiveSpaceIsShown {
+                            await dismissImmersiveSpace()
+                            immersiveSpaceIsShown = false
+                        }
+                    }
+                }
+
+            }
         }
         .headerProminence(.increased)
     }
@@ -178,8 +209,6 @@ extension EdgeInsets {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

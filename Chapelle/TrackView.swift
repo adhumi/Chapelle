@@ -17,10 +17,12 @@ struct TrackView: View {
     
     var body: some View {
         ScrollView {
+            #if os(iOS)
             if let track = TrackMetadata(name: nordicFranceTrack.name), track.gpxPath != nil {
                 MapView(track: track, color: trackColor)
                     .frame(height: 250)
             }
+            #endif
             
             HStack {
                 VStack(alignment: .leading) {
@@ -106,7 +108,7 @@ struct TrackView: View {
             .cornerRadius(8)
             .overlay(
                 RoundedRectangle(cornerRadius: 8)
-                    .stroke(Color(UIColor.lightGray), lineWidth: 1/UIScreen.main.scale)
+                    .stroke(Color(UIColor.lightGray), lineWidth: 1)
             )
             .padding(.horizontal)
         } else {
@@ -121,7 +123,7 @@ struct TrackView: View {
             .cornerRadius(8)
             .overlay(
                 RoundedRectangle(cornerRadius: 8)
-                    .stroke(Color(UIColor.lightGray), lineWidth: 1/UIScreen.main.scale)
+                    .stroke(Color(UIColor.lightGray), lineWidth: 1)
             )
             .padding()
     }
