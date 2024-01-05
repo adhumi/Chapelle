@@ -13,8 +13,8 @@ struct WeatherScrollViewCell: View {
             dailyWeatherView(forecast: forecast)
         }
         .sheet(isPresented: $detailsPresented) {
-            if let date = forecast.time, #available(iOS 16.0, *) {
-                DailyWeatherView(showModal: $detailsPresented, date: date, forecasts: weather.forecasts(for: date))
+            if #available(iOS 16.0, *) {
+                DailyWeatherView(showModal: $detailsPresented, date: forecast.time, forecasts: weather.forecasts(for: forecast.time))
             }
         }
     }
