@@ -694,7 +694,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 9;
+				MARKETING_VERSION = 10;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.chapelledesbois.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -723,7 +723,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 9;
+				MARKETING_VERSION = 10;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.chapelledesbois.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
