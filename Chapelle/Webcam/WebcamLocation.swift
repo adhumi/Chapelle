@@ -4,7 +4,6 @@ enum WebcamLocation: String, CaseIterable, Identifiable {
     case chapelle
     case prePoncet
     case morbierMarais
-    case morbierGlacier
     
     private var slug: String {
         switch self {
@@ -14,8 +13,6 @@ enum WebcamLocation: String, CaseIterable, Identifiable {
             return "val-de-mouthe_pre-poncet"
         case .morbierMarais:
             return "morbier_marais"
-        case .morbierGlacier:
-            return "morbier_les-glacieres"
         }
     }
     
@@ -27,8 +24,6 @@ enum WebcamLocation: String, CaseIterable, Identifiable {
             return "Pré Poncet"
         case .morbierMarais:
             return "Morbier – Les Marais"
-        case .morbierGlacier:
-            return "Morbier – Le Glacier"
         }
     }
     
