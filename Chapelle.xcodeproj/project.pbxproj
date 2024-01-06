@@ -77,6 +77,7 @@
 		A6F8AE31299A8C9F00B3D170 /* MapView+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE2E299A8C9F00B3D170 /* MapView+Route.swift */; };
 		A6F8AE32299A8C9F00B3D170 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE2F299A8C9F00B3D170 /* MapView.swift */; };
 		A6F8AE34299A8D2400B3D170 /* GPXParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE33299A8D2400B3D170 /* GPXParser.swift */; };
+		EF7F99532B48DC4D0003E262 /* ContentMarginDisabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7F99522B48DC4D0003E262 /* ContentMarginDisabled.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +184,7 @@
 		A6F8AE2E299A8C9F00B3D170 /* MapView+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapView+Route.swift"; sourceTree = "<group>"; };
 		A6F8AE2F299A8C9F00B3D170 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A6F8AE33299A8D2400B3D170 /* GPXParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXParser.swift; sourceTree = "<group>"; };
+		EF7F99522B48DC4D0003E262 /* ContentMarginDisabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMarginDisabled.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			children = (
 				A61511C8299ACD8800ED052F /* ChapelleWidgetBundle.swift */,
 				A61511CA299ACD8800ED052F /* ChapelleWidget.swift */,
+				EF7F99522B48DC4D0003E262 /* ContentMarginDisabled.swift */,
 				A61511CC299ACD8900ED052F /* Assets.xcassets */,
 				A61511CE299ACD8900ED052F /* Info.plist */,
 			);
@@ -588,6 +591,7 @@
 			files = (
 				A61511C9299ACD8800ED052F /* ChapelleWidgetBundle.swift in Sources */,
 				A61511CB299ACD8800ED052F /* ChapelleWidget.swift in Sources */,
+				EF7F99532B48DC4D0003E262 /* ContentMarginDisabled.swift in Sources */,
 				A61511D7299ACE4500ED052F /* ImageArchive.swift in Sources */,
 				A61511D6299ACE1800ED052F /* WebcamLocation.swift in Sources */,
 				A61511DD299ACFEA00ED052F /* SnowStatus.swift in Sources */,

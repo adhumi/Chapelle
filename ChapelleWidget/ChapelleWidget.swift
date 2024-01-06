@@ -78,8 +78,6 @@ struct ChapelleWidgetEntryView : View {
                         .clipped()
                 }
             }
-            
-            
         }
         .overlay(alignment: .bottom) {
             if family == .systemSmall {
@@ -165,7 +163,7 @@ struct ChapelleWidget: Widget {
         .configurationDisplayName("Chapelle des Bois")
         .description("Pour garder un œil sur le départ des pistes, la météo et la hauteur de neige.")
         .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
-
+        .contentMarginsDisabled()
     }
 }
 
