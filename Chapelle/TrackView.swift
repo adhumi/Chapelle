@@ -27,7 +27,13 @@ struct TrackView: View {
                     if let status = nordicFranceTrack.status {
                         Label(status.description, systemImage: status.systemImageName)
                             .font(.subheadline)
-                            .foregroundColor(status.color)
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .fill(nordicFranceTrack.status?.color ?? .secondary)
+                            )
                     }
                     
                     Text(nordicFranceTrack.name)
@@ -145,11 +151,11 @@ struct TrackView: View {
 
 struct TrackView_Preview: PreviewProvider {
     static var previews: some View {
-        TrackView(nordicFranceTrack: NordicFranceTrack(activity: .xcSkiing,
-                               name: "Chalet Pin",
-                               info: nil,
-                               difficulty: .red,
-                                                       status: .opened,
-                                                       length: nil))
+        TrackCellView(nordicFranceTrack: .init(activity: .xcSkiing,
+                                               name: "Chalet Pin",
+                                               info: nil,
+                                               difficulty: .red,
+                                               status: .opened,
+                                               length: nil))
     }
 }

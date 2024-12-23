@@ -102,11 +102,8 @@ struct ContentView: View {
                     Text("Toutes les pistes sont fermées")
                 }
                 .listRowBackground(Color.red.opacity(0.2))
-
-                
             }
         }
-        
     }
     
     var webcamSection: some View {

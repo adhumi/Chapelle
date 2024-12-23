@@ -21,11 +21,11 @@ struct NordicFranceTrack: Identifiable {
         var systemImageName: String {
             switch self {
                 case .opened:
-                    return "checkmark.circle"
+                    return "checkmark.circle.fill"
                 case .closed:
-                    return "xmark.circle"
+                    return "minus.circle.fill"
                 case .partiallyOpened:
-                    return "exclamationmark.2"
+                    return "exclamationmark.triangle.fill"
             }
         }
         

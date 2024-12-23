@@ -24,7 +24,7 @@ struct WeatherScrollViewCell: View {
             dateText(forecast.time)
                 .padding(.horizontal, 4)
                 .font(.subheadline.bold())
-                .foregroundColor(.secondary)
+                .foregroundColor(forecast.time.isToday ? .accentColor : .secondary)
             
             forecast.next12Hours.sky?.icon
                 .resizable()
