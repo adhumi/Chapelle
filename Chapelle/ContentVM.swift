@@ -95,7 +95,11 @@ class ContentVM: ObservableObject {
                 guard let forecast = weather.nextMorningForecast else { break }
                 guard let sky = forecast.next6Hours.sky, let temperatureMin = forecast.next6Hours.airTemperatureMin, let temperatureMax = forecast.next6Hours.airTemperatureMax else { break }
 
-                    message += "Demain matin, \(sky.futureDescription) (\(Int(temperatureMin.rounded())) à \(Int(temperatureMax.rounded()))°C)."
+                    if temperatureMin.rounded() == temperatureMax.rounded() {
+                        message += "Demain matin, \(sky.futureDescription) (\(Int(temperatureMin.rounded()))°C)."
+                    } else {
+                        message += "Demain matin, \(sky.futureDescription) (\(Int(temperatureMin.rounded())) à \(Int(temperatureMax.rounded()))°C)."
+                    }
             default:
                 guard let forecast = weather.forecasts.first else { break }
                 guard let sky = forecast.next6Hours.sky else { break }
