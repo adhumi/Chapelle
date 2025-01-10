@@ -1,4 +1,5 @@
 import SwiftUI
+#if os(iOS)
 import UIKit
 import Mapbox
 import MapKit
@@ -18,7 +19,7 @@ struct MapView: UIViewRepresentable {
         coordinator.trackOverlayColor = UIColor(color)
         return coordinator
     }
-    
+
     func makeUIView(context: Context) -> MGLMapView {
         let mapTilerKey = "mcV7vy8NaEh6o9rAxgDm"
         let styleURL = URL(string: "https://api.maptiler.com/maps/04917ed6-57c3-46d4-9d63-4ad478a409cd/style.json?key=\(mapTilerKey)")
@@ -49,3 +50,4 @@ struct MapView: UIViewRepresentable {
         }
     }
 }
+#endif

@@ -6,5 +6,9 @@ struct Chapelle: App {
         WindowGroup {
             ContentView()
         }
+#if os(macOS)
+        .windowToolbarStyle(.unified(showsTitle: true))
+        .windowStyle(.hiddenTitleBar)
+#endif
     }
 }

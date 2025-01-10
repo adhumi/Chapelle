@@ -10,7 +10,9 @@ struct WebcamsView: View {
         }
         .background(Color("ListBackground"))
         .navigationTitle("Webcams")
+#if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
+#endif
     }
 }
 

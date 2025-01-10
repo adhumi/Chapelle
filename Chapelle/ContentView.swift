@@ -15,7 +15,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 welcomeSection
                 
@@ -23,9 +23,9 @@ struct ContentView: View {
                     Section {
                         HStack(alignment: .firstTextBaseline, spacing: 8) { 
                             Label("", systemImage: "info.circle")
-                            .labelStyle(.iconOnly)
-                            .symbolRenderingMode(.hierarchical)
-                            .foregroundColor(.blue)
+                                .labelStyle(.iconOnly)
+                                .symbolRenderingMode(.hierarchical)
+                                .foregroundColor(.blue)
                             
                             Text(infoMessage)
                         }
@@ -40,9 +40,7 @@ struct ContentView: View {
                     weatherSection(weather)
                 }
                 
-                if !vm.tracks.isEmpty {
-                    tracksSection
-                }
+                tracksSection
                 
                 miscSection
             }
@@ -56,8 +54,9 @@ struct ContentView: View {
                 await vm.loadWeather()
             }
         }
-        .navigationViewStyle(.stack)
+#if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
+#endif
     }
     
     var tracksFilter: some View {

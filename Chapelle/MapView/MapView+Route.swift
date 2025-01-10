@@ -1,10 +1,4 @@
-//
-//  File.swift
-//  Chapelle
-//
-//  Created by Adrien Humiliere on 18/01/2022.
-//
-
+#if os(iOS)
 import UIKit
 import Mapbox
 
@@ -73,3 +67,4 @@ extension Array where Element == MGLPolyline {
                                    ne: CLLocationCoordinate2D(latitude: latitudeMax + margin, longitude: longitudeMax + margin))
     }
 }
+#endif

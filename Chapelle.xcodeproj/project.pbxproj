@@ -11,7 +11,7 @@
 		A61511C9299ACD8800ED052F /* ChapelleWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61511C8299ACD8800ED052F /* ChapelleWidgetBundle.swift */; };
 		A61511CB299ACD8800ED052F /* ChapelleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61511CA299ACD8800ED052F /* ChapelleWidget.swift */; };
 		A61511CD299ACD8900ED052F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61511CC299ACD8900ED052F /* Assets.xcassets */; };
-		A61511D1299ACD8900ED052F /* ChapelleWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A61511C1299ACD8800ED052F /* ChapelleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A61511D1299ACD8900ED052F /* ChapelleWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A61511C1299ACD8800ED052F /* ChapelleWidgetExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A61511D6299ACE1800ED052F /* WebcamLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AE0C299A8B7B00B3D170 /* WebcamLocation.swift */; };
 		A61511D7299ACE4500ED052F /* ImageArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADFE299A8B1D00B3D170 /* ImageArchive.swift */; };
 		A61511D8299ACF4600ED052F /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADF7299A8B1D00B3D170 /* Weather.swift */; };
@@ -32,6 +32,7 @@
 		A6431870299BE96900AA10E7 /* norbiere.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A643186F299BE96900AA10E7 /* norbiere.gpx */; };
 		A6431872299BEB6E00AA10E7 /* greffier.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A6431871299BEB6E00AA10E7 /* greffier.gpx */; };
 		A6431874299BED6F00AA10E7 /* presDHaut.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A6431873299BED6F00AA10E7 /* presDHaut.gpx */; };
+		A6785CAC2D1DAD26005E69FB /* ElevationChartPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785CAB2D1DAD26005E69FB /* ElevationChartPoint.swift */; };
 		A6F8AD4C299A885300B3D170 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F8AD4B299A885300B3D170 /* Preview Assets.xcassets */; };
 		A6F8AD56299A885300B3D170 /* ChapelleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD55299A885300B3D170 /* ChapelleTests.swift */; };
 		A6F8AD60299A885300B3D170 /* ChapelleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD5F299A885300B3D170 /* ChapelleUITests.swift */; };
@@ -46,10 +47,7 @@
 		A6F8ADB4299A88AF00B3D170 /* ContentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD8D299A88AE00B3D170 /* ContentVM.swift */; };
 		A6F8ADB9299A88AF00B3D170 /* NordicFranceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AD92299A88AE00B3D170 /* NordicFranceService.swift */; };
 		A6F8ADBE299A896300B3D170 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = A6F8ADBD299A896300B3D170 /* SwiftSoup */; };
-		A6F8ADC1299A89A200B3D170 /* Mapbox in Frameworks */ = {isa = PBXBuildFile; productRef = A6F8ADC0299A89A200B3D170 /* Mapbox */; };
-		A6F8ADDA299A8A3900B3D170 /* ElevationChartShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADD1299A8A3900B3D170 /* ElevationChartShape.swift */; };
-		A6F8ADDC299A8A3900B3D170 /* ElevationChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADC5299A8A3900B3D170 /* ElevationChart.swift */; };
-		A6F8ADDD299A8A3900B3D170 /* ElevationChartFillShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADCF299A8A3900B3D170 /* ElevationChartFillShape.swift */; };
+		A6F8ADC1299A89A200B3D170 /* Mapbox in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = A6F8ADC0299A89A200B3D170 /* Mapbox */; };
 		A6F8ADFF299A8B1D00B3D170 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADF7299A8B1D00B3D170 /* Weather.swift */; };
 		A6F8AE00299A8B1D00B3D170 /* YRForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADF8299A8B1D00B3D170 /* YRForecast.swift */; };
 		A6F8AE01299A8B1D00B3D170 /* TrackMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8ADF9299A8B1D00B3D170 /* TrackMetadata.swift */; };
@@ -137,6 +135,7 @@
 		A643186F299BE96900AA10E7 /* norbiere.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = norbiere.gpx; sourceTree = "<group>"; };
 		A6431871299BEB6E00AA10E7 /* greffier.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = greffier.gpx; sourceTree = "<group>"; };
 		A6431873299BED6F00AA10E7 /* presDHaut.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = presDHaut.gpx; sourceTree = "<group>"; };
+		A6785CAB2D1DAD26005E69FB /* ElevationChartPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationChartPoint.swift; sourceTree = "<group>"; };
 		A6F8AD40299A885200B3D170 /* Chapelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F8AD49299A885300B3D170 /* Chapelle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chapelle.entitlements; sourceTree = "<group>"; };
 		A6F8AD4B299A885300B3D170 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -154,9 +153,6 @@
 		A6F8AD8B299A88AD00B3D170 /* Chapelle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapelle.swift; sourceTree = "<group>"; };
 		A6F8AD8D299A88AE00B3D170 /* ContentVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentVM.swift; sourceTree = "<group>"; };
 		A6F8AD92299A88AE00B3D170 /* NordicFranceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NordicFranceService.swift; sourceTree = "<group>"; };
-		A6F8ADC5299A8A3900B3D170 /* ElevationChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationChart.swift; sourceTree = "<group>"; };
-		A6F8ADCF299A8A3900B3D170 /* ElevationChartFillShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationChartFillShape.swift; sourceTree = "<group>"; };
-		A6F8ADD1299A8A3900B3D170 /* ElevationChartShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationChartShape.swift; sourceTree = "<group>"; };
 		A6F8ADF7299A8B1D00B3D170 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		A6F8ADF8299A8B1D00B3D170 /* YRForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YRForecast.swift; sourceTree = "<group>"; };
 		A6F8ADF9299A8B1D00B3D170 /* TrackMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackMetadata.swift; sourceTree = "<group>"; };
@@ -245,6 +241,17 @@
 			path = ChapelleWidget;
 			sourceTree = "<group>";
 		};
+		A6785CAD2D1DB11C005E69FB /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8AD81299A88AC00B3D170 /* WeatherScrollView.swift */,
+				A6431865299BAFC100AA10E7 /* WeatherScrollViewCell.swift */,
+				A6F8AD8A299A88AD00B3D170 /* WeatherService.swift */,
+				A6431863299B88F000AA10E7 /* DailyWeatherView.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 		A6F8AD37299A885200B3D170 = {
 			isa = PBXGroup;
 			children = (
@@ -279,14 +286,11 @@
 				A6F8AD92299A88AE00B3D170 /* NordicFranceService.swift */,
 				A6F8AD7B299A88AA00B3D170 /* TrackCellView.swift */,
 				A6F8AD86299A88AC00B3D170 /* TrackView.swift */,
-				A6F8AD81299A88AC00B3D170 /* WeatherScrollView.swift */,
-				A6431865299BAFC100AA10E7 /* WeatherScrollViewCell.swift */,
-				A6F8AD8A299A88AD00B3D170 /* WeatherService.swift */,
-				A6431863299B88F000AA10E7 /* DailyWeatherView.swift */,
+				A6785CAB2D1DAD26005E69FB /* ElevationChartPoint.swift */,
+				A6785CAD2D1DB11C005E69FB /* Weather */,
 				A6F8AE2C299A8C8E00B3D170 /* MapView */,
 				A6F8AE07299A8B4D00B3D170 /* Webcam */,
 				A6F8ADE6299A8ADC00B3D170 /* Model */,
-				A6F8ADE3299A8A5700B3D170 /* ElevationChart */,
 				A61511BC299A97C500ED052F /* Info.plist */,
 				A6F8AD49299A885300B3D170 /* Chapelle.entitlements */,
 				A6F8AE12299A8BD700B3D170 /* Resources */,
@@ -318,16 +322,6 @@
 				A6F8AD61299A885400B3D170 /* ChapelleUITestsLaunchTests.swift */,
 			);
 			path = ChapelleUITests;
-			sourceTree = "<group>";
-		};
-		A6F8ADE3299A8A5700B3D170 /* ElevationChart */ = {
-			isa = PBXGroup;
-			children = (
-				A6F8ADC5299A8A3900B3D170 /* ElevationChart.swift */,
-				A6F8ADCF299A8A3900B3D170 /* ElevationChartFillShape.swift */,
-				A6F8ADD1299A8A3900B3D170 /* ElevationChartShape.swift */,
-			);
-			path = ElevationChart;
 			sourceTree = "<group>";
 		};
 		A6F8ADE6299A8ADC00B3D170 /* Model */ = {
@@ -614,7 +608,6 @@
 				A6F8AE0F299A8B7B00B3D170 /* ActivityViewController.swift in Sources */,
 				A6F8AE0E299A8B7B00B3D170 /* WebcamsView.swift in Sources */,
 				A6F8AE01299A8B1D00B3D170 /* TrackMetadata.swift in Sources */,
-				A6F8ADDA299A8A3900B3D170 /* ElevationChartShape.swift in Sources */,
 				A6F8ADA2299A88AF00B3D170 /* TrackCellView.swift in Sources */,
 				A6431864299B88F000AA10E7 /* DailyWeatherView.swift in Sources */,
 				A6F8ADB9299A88AF00B3D170 /* NordicFranceService.swift in Sources */,
@@ -622,14 +615,13 @@
 				A6F8AE05299A8B1D00B3D170 /* WeatherCondition.swift in Sources */,
 				A6F8AE02299A8B1D00B3D170 /* SnowStatus.swift in Sources */,
 				A6F8ADB2299A88AF00B3D170 /* Chapelle.swift in Sources */,
-				A6F8ADDC299A8A3900B3D170 /* ElevationChart.swift in Sources */,
 				A6431866299BAFC100AA10E7 /* WeatherScrollViewCell.swift in Sources */,
 				A6F8AE32299A8C9F00B3D170 /* MapView.swift in Sources */,
 				A6F8AE00299A8B1D00B3D170 /* YRForecast.swift in Sources */,
 				A6F8AE04299A8B1D00B3D170 /* NordicFranceTrack.swift in Sources */,
 				A6F8AE2B299A8C6800B3D170 /* Waypoint.swift in Sources */,
-				A6F8ADDD299A8A3900B3D170 /* ElevationChartFillShape.swift in Sources */,
 				A6F8AE11299A8B7B00B3D170 /* WebcamLocation.swift in Sources */,
+				A6785CAC2D1DAD26005E69FB /* ElevationChartPoint.swift in Sources */,
 				A6F8ADFF299A8B1D00B3D170 /* Weather.swift in Sources */,
 				A6F8ADAD299A88AF00B3D170 /* TrackView.swift in Sources */,
 				A6F8ADA8299A88AF00B3D170 /* WeatherScrollView.swift in Sources */,
@@ -664,6 +656,7 @@
 /* Begin PBXTargetDependency section */
 		A61511D0299ACD8900ED052F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = A61511C0299ACD8800ED052F /* ChapelleWidgetExtension */;
 			targetProxy = A61511CF299ACD8900ED052F /* PBXContainerItemProxy */;
 		};
@@ -692,7 +685,7 @@
 				INFOPLIST_FILE = ChapelleWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ChapelleWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -721,7 +714,7 @@
 				INFOPLIST_FILE = ChapelleWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ChapelleWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -882,15 +875,16 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 15;
 				MARKETING_VERSION = 12;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.chapelledesbois;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -926,15 +920,16 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 15;
 				MARKETING_VERSION = 12;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.chapelledesbois;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;

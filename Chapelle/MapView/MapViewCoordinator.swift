@@ -1,12 +1,7 @@
-//
-//  File.swift
-//  Chapelle
-//
-//  Created by Adrien Humiliere on 28/12/2021.
-//
-
 import Foundation
 import MapKit
+
+#if os(iOS)
 import Mapbox
 
 class MapViewCoordinator: NSObject, MGLMapViewDelegate {
@@ -22,3 +17,4 @@ class MapViewCoordinator: NSObject, MGLMapViewDelegate {
         return MKOverlayRenderer()
     }
 }
+#endif

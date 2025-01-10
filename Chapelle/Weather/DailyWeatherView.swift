@@ -133,10 +133,12 @@ self.id = self.time
                 }
                 .padding(.horizontal)
             }
+#if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
+#endif
             .navigationTitle(dateFormatter.string(from: date))
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
+                ToolbarItem(placement: .automatic) {
                     Button {
                         showModal = false
                     } label: {

@@ -17,10 +17,12 @@ struct TrackView: View {
     
     var body: some View {
         ScrollView {
+#if os(iOS)
             if let track = TrackMetadata(name: nordicFranceTrack.name), track.gpxPath != nil {
                 MapView(track: track, color: trackColor)
                     .frame(height: 250)
             }
+#endif
             
             HStack {
                 VStack(alignment: .leading) {
@@ -60,37 +62,16 @@ struct TrackView: View {
             .padding(.horizontal)
             
             if let metadata = nordicFranceTrack.metadata, let gpxPath = metadata.gpxPath, let waypoints = try? GPXParser().parseWaypoints(from: gpxPath) {
-                if #available(iOS 16.0, *) {
-                    elevationChartForIOS16(waypoints: waypoints)
-                } else {
-                    elevationChartForIOS15(waypoints: waypoints)
-                }
+                elevationChart(waypoints: waypoints)
             }
-            
-//            // Remove as Nordic France data is not up to date
-//            if let info = nordicFranceTrack.info, !info.isEmpty {
-//                HStack(alignment: .top, spacing: 8) {
-//                    Image(systemName: "info.circle")
-//                        .symbolRenderingMode(.hierarchical)
-//                        .foregroundColor(.blue)
-//
-//                    Text(info)
-//                        .font(.subheadline)
-//                }
-//                .padding()
-//                .background(.ultraThinMaterial)
-//                .cornerRadius(8)
-//                .padding()
-//            }
-            
         }
+#if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
-            
+#endif
     }
     
-    @available(iOS 16.0, *)
     @ViewBuilder
-    func elevationChartForIOS16(waypoints: [Waypoint]) -> some View {
+    func elevationChart(waypoints: [Waypoint]) -> some View {
         let elevationChartPoints = waypoints.elevationChartPoints()
         let minElevation = (elevationChartPoints.lowestPoint()?.elevation ?? 900)
         let maxElevation = (elevationChartPoints.highestPoint()?.elevation ?? 1300)
@@ -112,24 +93,12 @@ struct TrackView: View {
             .cornerRadius(8)
             .overlay(
                 RoundedRectangle(cornerRadius: 8)
-                    .stroke(Color(UIColor.lightGray), lineWidth: 1/UIScreen.main.scale)
+                    .stroke(Color(.lightGray), lineWidth: 1)
             )
             .padding(.horizontal)
         } else {
             EmptyView()
         }
-    }
-    
-    func elevationChartForIOS15(waypoints: [Waypoint]) -> some View {
-        ElevationChart(waypoints: waypoints)
-            .frame(height: 100)
-            .padding(.top)
-            .cornerRadius(8)
-            .overlay(
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(Color(UIColor.lightGray), lineWidth: 1/UIScreen.main.scale)
-            )
-            .padding()
     }
     
     func cartridge(title: String, value: String, color: Color? = .primary) -> some View {

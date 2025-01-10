@@ -68,6 +68,7 @@ struct WebcamCell: View {
                 Spacer()
                 
                 HStack(alignment: .center) {
+#if os(iOS)
                     Button {
                         self.isSharePresented = true
                     } label: {
@@ -81,6 +82,7 @@ struct WebcamCell: View {
                     }, content: {
                         ActivityViewController(activityItems: [location.shareURL])
                     })
+#endif
                     
                     Spacer()
                 }
