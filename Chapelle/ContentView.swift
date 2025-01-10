@@ -82,11 +82,11 @@ struct ContentView: View {
     
     @ViewBuilder
     var tracksSection: some View {
-        let tracks = vm.tracks(for: selectedActivity)
         
-        if vm.tracksOpened {
-            Section(header: tracksFilter,
-                    footer: Text("\(vm.tracksFooter())\nSource : [nordicfrance.fr](https://www.nordicfrance.fr/nordicfrance_station/chapelle-des-bois/)")) {
+        Section(header: tracksFilter,
+                footer: Text("\(vm.tracksFooter())\nSource : [nordicfrance.fr](https://www.nordicfrance.fr/nordicfrance_station/chapelle-des-bois/)")) {
+            let tracks = vm.tracks(for: selectedActivity)
+            if vm.tracksOpened {
                 ForEach(tracks) { track in
                     NavigationLink {
                         TrackView(nordicFranceTrack: track)
@@ -94,9 +94,7 @@ struct ContentView: View {
                         TrackCellView(nordicFranceTrack: track)
                     }
                 }
-            }.headerProminence(.increased)
-        } else {
-            Section(footer: Text("\(vm.tracksFooter())\nSource : [nordicfrance.fr](https://www.nordicfrance.fr/nordicfrance_station/chapelle-des-bois/)")) {
+            } else {
                 HStack {
                     Image(systemName: "xmark.circle")
                         .foregroundColor(.red)
@@ -105,6 +103,7 @@ struct ContentView: View {
                 .listRowBackground(Color.red.opacity(0.2))
             }
         }
+        .headerProminence(.increased)
     }
     
     var webcamSection: some View {
