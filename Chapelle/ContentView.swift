@@ -74,17 +74,19 @@ struct ContentView: View {
                 Image(systemName: "chevron.down")
                 Spacer()
             }
+            .font(.title3)
+            .fontWeight(.semibold)
             .frame(maxWidth: .infinity)
         }
     }
     
     @ViewBuilder
     var tracksSection: some View {
-        if vm.areAllTracksClosed {
-            let tracks = vm.tracks(for: selectedActivity)
-            
+        let tracks = vm.tracks(for: selectedActivity)
+        
+        if vm.tracksOpened {
             Section(header: tracksFilter,
-                    footer: Text("Mise à jour : \(vm.lastUpdate ?? "–")\nSource : [nordicfrance.fr](https://www.nordicfrance.fr/nordicfrance_station/chapelle-des-bois/)")) {
+                    footer: Text("\(vm.tracksFooter())\nSource : [nordicfrance.fr](https://www.nordicfrance.fr/nordicfrance_station/chapelle-des-bois/)")) {
                 ForEach(tracks) { track in
                     NavigationLink {
                         TrackView(nordicFranceTrack: track)
@@ -94,7 +96,7 @@ struct ContentView: View {
                 }
             }.headerProminence(.increased)
         } else {
-            Section(footer: Text("Mise à jour : \(vm.lastUpdate ?? "–")\nSource : [nordicfrance.fr](https://www.nordicfrance.fr/nordicfrance_station/chapelle-des-bois/)")) {
+            Section(footer: Text("\(vm.tracksFooter())\nSource : [nordicfrance.fr](https://www.nordicfrance.fr/nordicfrance_station/chapelle-des-bois/)")) {
                 HStack {
                     Image(systemName: "xmark.circle")
                         .foregroundColor(.red)

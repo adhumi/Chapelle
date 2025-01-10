@@ -9,16 +9,18 @@ class ContentVM: ObservableObject {
     @Published var snowStatus: SnowStatus?
     @Published var infoMessage: String?
     @Published var weather: Weather?
+    @Published var lastGrooming: String?
     
     let nordicFranceService = NordicFranceService()
     let weatherService = WeatherService()
     
-    var areAllTracksClosed: Bool {
-        return tracks.filter({ $0.status == .opened }).count > 0
+    var tracksOpened: Bool {
+        return (tracks.filter({ $0.status == .opened }).count > 0)
     }
     
-    init(tracks: [NordicFranceTrack] = [], lastUpdate: String? = nil, snowStatus: SnowStatus? = nil, infoMessage: String? = nil, weather: Weather? = nil) {
+    init(tracks: [NordicFranceTrack] = [], lastGrooming: String? = nil, lastUpdate: String? = nil, snowStatus: SnowStatus? = nil, infoMessage: String? = nil, weather: Weather? = nil) {
         self.tracks = tracks
+        self.lastGrooming = lastGrooming
         self.lastUpdate = lastUpdate
         self.snowStatus = snowStatus
         self.infoMessage = infoMessage
@@ -33,8 +35,9 @@ class ContentVM: ObservableObject {
     func loadTracks() async {
         do {
             let dom = try await nordicFranceService.fetchWebpage()
-            self.tracks = try parseTracks(dom)
             self.lastUpdate = try parseLastUpdate(dom)
+            self.lastGrooming = try parseLastGrooming(dom)
+            self.tracks = try parseTracks(dom)
             self.snowStatus = try parseSnowStatus(dom)
             self.infoMessage = try parseInfoMessage(dom)
         } catch (_) {
@@ -61,7 +64,7 @@ class ContentVM: ObservableObject {
     }
     
     private func parseLastUpdate(_ dom: Document) throws -> String {
-        return try dom.select("span.NordicDetail-damagelabel").text()
+        return try dom.select("span.NordicDetail-dateMaj").text()
     }
     
     private func parseSnowStatus(_ dom: Document) throws -> SnowStatus? {
@@ -75,10 +78,25 @@ class ContentVM: ObservableObject {
         return info.isEmpty ? nil : info
     }
     
+    private func parseLastGrooming(_ dom: Document) throws -> String? {
+        return try dom.select("span.NordicDetail-damagelabel").text()
+    }
+    
     func tracks(for activity: Activity) -> [NordicFranceTrack] {
         return tracks.filter {
             $0.activity == activity
         }
+    }
+    
+    func tracksFooter() -> String {
+        var footer: [String] = []
+        if let lastGrooming = lastGrooming, tracksOpened {
+            footer.append("Dernier damage : \(lastGrooming)")
+        }
+        if let lastUpdate = lastUpdate {
+            footer.append(lastUpdate)
+        }
+        return footer.joined(separator: "\n")
     }
     
     func welcomeMessage(withSnowStatus snowStatus: SnowStatus?) -> String {
